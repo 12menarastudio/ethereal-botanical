@@ -89,7 +89,7 @@
         .tamu-box span { font-size: 10px; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px; }
         .nama-tamu { font-size: 18px; font-weight: 600; margin-top: 5px; word-wrap: break-word; }
 
-        /* 👑 JURUS NOBEL 1: THE ROYAL WAX SEAL (HOLD TO UNLOCK) */
+        /* ðŸ‘‘ JURUS NOBEL 1: THE ROYAL WAX SEAL (HOLD TO UNLOCK) */
         .wax-seal-container { position: relative; width: 110px; height: 110px; margin: 0 auto; cursor: pointer; user-select: none; -webkit-tap-highlight-color: transparent; }
         .progress-ring { position: absolute; top: 0; left: 0; transform: rotate(-90deg); pointer-events: none; }
         .progress-ring__circle { transition: stroke-dashoffset 0.1s linear; stroke-linecap: round; }
@@ -178,7 +178,7 @@
         /* EPILOG REVEAL BY READING */
         .epilogue-section { padding: 100px 20px 60px 20px; text-align: center; position: relative; z-index: 2; }
         .epilogue-box { max-width: 600px; margin: 0 auto; position: relative; padding: 40px 20px; border-top: 1px solid var(--aksen-gold); border-bottom: 1px solid var(--aksen-gold); }
-        .epilogue-box::before { content: '“'; font-family: var(--font-judul); font-size: 80px; color: var(--aksen-pink); position: absolute; top: -30px; left: 50%; transform: translateX(-50%); line-height: 1; opacity: 0.6; }
+        .epilogue-box::before { content: 'â€œ'; font-family: var(--font-judul); font-size: 80px; color: var(--aksen-pink); position: absolute; top: -30px; left: 50%; transform: translateX(-50%); line-height: 1; opacity: 0.6; }
         
         .epilogue-text { 
             font-family: var(--font-judul); font-size: 20px; line-height: 1.8; font-style: italic; font-weight: 600; 
@@ -321,7 +321,7 @@
         }
         .btn-marketplace:active { transform: scale(0.95); }
         .btn-copy-half { flex: 1; padding: 14px; }
-        /* ⏳ JURUS NOBEL 3: THE TIME CAPSULE */
+        /* â³ JURUS NOBEL 3: THE TIME CAPSULE */
         .time-capsule-box { background: rgba(58, 53, 50, 0.9); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(197, 168, 128, 0.4); border-radius: 20px; padding: 40px 25px; max-width: 550px; margin: 50px auto 0; text-align: center; color: #fff; position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
         .time-capsule-box::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, transparent, var(--aksen-gold), transparent); }
         .tc-title { font-family: var(--font-judul); font-size: 28px; color: var(--aksen-gold); margin-bottom: 10px; font-style: italic; }
@@ -352,7 +352,7 @@
         .fairy-dust { position: absolute; width: 6px; height: 6px; background: #FFD700; border-radius: 50%; pointer-events: none; z-index: 99999; box-shadow: 0 0 8px #FFD700, 0 0 15px var(--aksen-pink); animation: dustSparkle 0.8s forwards ease-out; }
         @keyframes dustSparkle { 0% { opacity: 1; transform: scale(1) translateY(0) rotate(0deg); } 100% { opacity: 0; transform: scale(0) translateY(-40px) rotate(180deg); } }
 
-        /* 🌌 JURUS NOBEL 2: CONSTELLATION STARS */
+        /* ðŸŒŒ JURUS NOBEL 2: CONSTELLATION STARS */
         .constellation-star { position: fixed; width: 4px; height: 4px; background: #FFF; border-radius: 50%; box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700; transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94); z-index: 9996; pointer-events: none; }
 
         #particles-container { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; pointer-events: none; z-index: 9998; overflow: hidden; }
@@ -433,7 +433,7 @@
     </div>
 
     <audio id="bg-music" loop>
-        <source src="lagu.mp3" type="audio/mpeg">
+        <source src="lagu.MP3" type="audio/mpeg">
     </audio>
 
     <div class="float-menu" id="menu-mengapung">
@@ -748,7 +748,7 @@
     <script>
         AOS.init({ duration: 1000, once: true, offset: 50 });
 
-        /* 👑 JURUS NOBEL 1: WAX SEAL LOGIC */
+        /* ðŸ‘‘ JURUS NOBEL 1: WAX SEAL LOGIC */
         const seal = document.getElementById('wax-seal');
         const circle = document.querySelector('.progress-ring__circle');
         const radius = circle.r.baseVal.value;
@@ -895,7 +895,7 @@
             }
         });
 
-        /* 🌌 JURUS NOBEL 2: CONSTELLATION IDLE MAGIC */
+        /* ðŸŒŒ JURUS NOBEL 2: CONSTELLATION IDLE MAGIC */
         let idleTimer;
         let constellationActive = false;
         const pContainer = document.getElementById('particles-container');
@@ -954,7 +954,7 @@
             });
         }
 
-        /* ✨ FAIRY DUST SCRIPT */
+        /* âœ¨ FAIRY DUST SCRIPT */
         let lastDustTime = 0;
         function createDust(e) {
             let now = Date.now();
@@ -1094,7 +1094,7 @@
             alert('Terima kasih! Pesan majik Anda telah terkirim.');
         }
 
-        /* ⏳ JURUS NOBEL 3: TIME CAPSULE SCRIPT */
+        /* â³ JURUS NOBEL 3: TIME CAPSULE SCRIPT */
         function segelKapsul() {
             const btn = document.getElementById('btn-segel');
             const box = document.getElementById('tc-pesan');
