@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Wedding of Lorenzo & Isabella - VVIP</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght=0,400;0,600;1,400&family=Petit+Formal+Script&family=Lato:wght=300;400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Petit+Formal+Script&family=Lato:wght@300;400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
@@ -17,7 +17,7 @@
             --bg-sage: #8F9779; 
             --teks-charcoal: #3A3532; 
             --teks-muted: #6B6B6B;
-            --aksen-pink: #C5A880; /* Warna diubah menjadi Emas (Sama dengan aksen-gold) */
+            --aksen-pink: #C5A880;
             --aksen-gold: #C5A880; 
             --font-judul: 'Cormorant Garamond', serif;
             --font-script: 'Petit Formal Script', cursive;
@@ -89,7 +89,7 @@
         .tamu-box span { font-size: 10px; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px; }
         .nama-tamu { font-size: 18px; font-weight: 600; margin-top: 5px; word-wrap: break-word; }
 
-        /* 👑 JURUS NOBEL 1: THE ROYAL WAX SEAL (HOLD TO UNLOCK) */
+        /* WAX SEAL */
         .wax-seal-container { position: relative; width: 110px; height: 110px; margin: 0 auto; cursor: pointer; user-select: none; -webkit-tap-highlight-color: transparent; }
         .progress-ring { position: absolute; top: 0; left: 0; transform: rotate(-90deg); pointer-events: none; }
         .progress-ring__circle { transition: stroke-dashoffset 0.1s linear; stroke-linecap: round; }
@@ -108,7 +108,7 @@
         .salam-script { font-family: var(--font-script); font-size: 20px; color: var(--aksen-pink); margin-bottom: 10px; font-weight: bold; }
 
         .countdown-wrapper { margin-top: 50px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-        .cd-box { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 15px; padding: 18px 10px; min-width: 75px; text-align: center; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.07); transition: transform 0.3s ease; }
+        .cd-box { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 15px; padding: 18px 10px; min-width: 75px; text-align: center; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.07); transition: transform 0.3s ease; }
         .cd-box:hover { transform: translateY(-5px); }
         .cd-angka { font-family: var(--font-judul); font-size: 30px; color: var(--aksen-gold); display: block; line-height: 1; margin-bottom: 5px; }
         .cd-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--teks-charcoal); font-weight: 600;}
@@ -121,9 +121,9 @@
         .nama-sapaan { font-family: var(--font-script); font-size: 42px; color: var(--aksen-pink); display: block; margin: 5px 0 10px 0; word-wrap: break-word; font-weight: bold; }
 
         /* ==========================================================================
-           4. KOMPONEN UI (PROFIL, TIMELINE, KOTAK)
+           4. KOMPONEN UI
            ========================================================================== */
-        .mahakarya-container { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.4); box-shadow: 0 10px 30px rgba(0,0,0,0.04); padding: 30px; border-radius: 20px; max-width: 900px; margin: 40px auto 30px auto; text-align: center; position: relative; z-index: 0; }
+        .mahakarya-container { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.4); box-shadow: 0 10px 30px rgba(0,0,0,0.04); padding: 30px; border-radius: 20px; max-width: 900px; margin: 40px auto 30px auto; text-align: center; position: relative; z-index: 0; }
         .mahakarya-container .judul-utama { margin-bottom: 0; }
 
         .profil-container { display: flex; flex-direction: column; gap: 0; max-width: 900px; margin: 0 auto; overflow: visible; width: 100%; position: relative; z-index: 2;} 
@@ -157,7 +157,7 @@
         .profil-divider { background: url('https://images.unsplash.com/photo-1600456899121-68eda5705257?q=80&w=1080&auto=format&fit=crop') center/cover; padding: 40px 20px; text-align: center; margin: 40px 0; box-shadow: inset 0 0 20px rgba(0,0,0,0.05); width: 100%;}
         .profil-divider h2 { font-family: var(--font-script); font-size: 42px; color: #000; font-weight: 400; }
 
-        .mahakarya-cerita { background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.04); padding: 40px; border-radius: 20px; max-width: 700px; margin: 40px auto; position: relative; z-index: 1; text-align: center; }
+        .mahakarya-cerita { background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.04); padding: 40px; border-radius: 20px; max-width: 700px; margin: 40px auto; position: relative; z-index: 1; text-align: center; }
         .mahakarya-cerita .salam-script { margin-top: 0; margin-bottom: 15px; } 
         .mahakarya-cerita .judul-utama { font-size: 32px; color: var(--bg-sage); margin-bottom: 20px; } 
 
@@ -175,7 +175,7 @@
         .circle-name { font-family: var(--font-judul); font-size: 18px; font-weight: 600; color: var(--teks-charcoal); line-height: 1.1; margin-bottom: 5px;}
         .circle-role { font-size: 9px; text-transform: uppercase; color: var(--bg-sage); letter-spacing: 2px; font-weight: 700;}
 
-        /* EPILOG REVEAL BY READING */
+        /* EPILOG */
         .epilogue-section { padding: 100px 20px 60px 20px; text-align: center; position: relative; z-index: 2; }
         .epilogue-box { max-width: 600px; margin: 0 auto; position: relative; padding: 40px 20px; border-top: 1px solid var(--aksen-gold); border-bottom: 1px solid var(--aksen-gold); }
         .epilogue-box::before { content: '“'; font-family: var(--font-judul); font-size: 80px; color: var(--aksen-pink); position: absolute; top: -30px; left: 50%; transform: translateX(-50%); line-height: 1; opacity: 0.6; }
@@ -223,7 +223,7 @@
         .btn-kalender { background: transparent; color: var(--aksen-gold); border: 1px solid var(--aksen-gold); font-weight: 600; }
         .btn-kalender:hover { background: var(--aksen-gold); color: #fff; }
 
-        .gift-box { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.6); border-radius: 20px; padding: 30px 20px; max-width: 450px; margin: 30px auto 0; box-shadow: 0 15px 35px rgba(0,0,0,0.06); display: flex; align-items: center; justify-content: space-between; border-left: 6px solid var(--aksen-gold); text-align: left; gap: 15px; position: relative; overflow: hidden; }
+        .gift-box { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.6); border-radius: 20px; padding: 30px 20px; max-width: 450px; margin: 30px auto 0; box-shadow: 0 15px 35px rgba(0,0,0,0.06); display: flex; align-items: center; justify-content: space-between; border-left: 6px solid var(--aksen-gold); text-align: left; gap: 15px; position: relative; overflow: hidden; }
         .gift-box::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(to bottom right, rgba(255,255,255,0.8), rgba(255,255,255,0) 40%, rgba(255,255,255,0)); pointer-events: none; }
         .gift-info h4 { font-size: 14px; margin-bottom: 6px; color: var(--aksen-gold); font-weight: 700;}
         .gift-info p { font-size: 16px; font-family: var(--font-judul); font-weight: 600; margin-bottom: 3px; word-break: break-all;}
@@ -231,11 +231,12 @@
         .btn-copy { background: #FFFAF0; border: 1px solid var(--aksen-gold); color: var(--aksen-gold); padding: 10px 15px; border-radius: 30px; font-size: 10px; cursor: pointer; transition: all 0.3s ease; font-weight: 700; letter-spacing: 1px; white-space: nowrap;}
         .btn-copy:hover { background: var(--aksen-gold); color: #fff; }
 
-        .form-rsvp { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.4); box-shadow: 0 10px 30px rgba(0,0,0,0.04); padding: 30px; border-radius: 20px; max-width: 550px; margin: 40px auto 0; text-align: left; }
+        .form-rsvp { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.4); box-shadow: 0 10px 30px rgba(0,0,0,0.04); padding: 30px; border-radius: 20px; max-width: 550px; margin: 40px auto 0; text-align: left; }
         .input-group { margin-bottom: 20px; }
         .input-group input, .input-group select, .input-group textarea { width: 100%; padding: 15px; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; font-family: var(--font-teks); font-size: 13px; outline: none; transition: all 0.3s ease; background: rgba(255,255,255,0.9); box-shadow: inset 0 2px 4px rgba(0,0,0,0.02); }
         .input-group input:focus, .input-group select:focus, .input-group textarea:focus { border-color: var(--aksen-gold); box-shadow: 0 0 15px rgba(197, 168, 128, 0.2), inset 0 2px 4px rgba(0,0,0,0.02); }
         .btn-submit { width: 100%; background: linear-gradient(135deg, var(--bg-sage), #7A8466); color: #fff; padding: 15px; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; letter-spacing: 2px; transition: all 0.3s ease; text-transform: uppercase; font-size: 12px; box-shadow: 0 5px 15px rgba(143, 151, 121, 0.4);} 
+        .btn-submit:disabled { background: #999; cursor: not-allowed; box-shadow: none; }
         
         .guestbook-list { max-height: 350px; overflow-y: auto; margin-top: 30px; text-align: left; padding-right: 5px;}
         .guestbook-list::-webkit-scrollbar { width: 6px; }
@@ -245,84 +246,18 @@
         .gb-name { font-weight: 600; font-size: 13px; color: var(--bg-sage); }
         .gb-time { font-size: 10px; color: #aaa; margin-left: 7px; }
         .gb-text { font-size: 12px; margin-top: 7px; line-height: 1.6; color: var(--teks-charcoal); font-weight: 300; word-wrap: break-word;}
-/* 🎁 JALUR SISTEM MARKETPLACE (GIFT) - REVOLUSI DEWA */
-        .marketplace-box { 
-            flex-direction: column; 
-            text-align: center; 
-            border-left: none !important; 
-            border-top: 4px solid var(--aksen-gold); 
-            padding-top: 55px !important; /* Ruang lebih luas untuk ikon */
-            margin-top: 60px !important; 
-            overflow: visible !important; /* KUNCI DEWA: Bebaskan ikon yang terpotong! */
-        }
-        
-        .gift-icon-wrapper { 
-            position: absolute; 
-            top: -40px; 
-            left: 50%; 
-            transform: translateX(-50%); 
-            width: 80px; 
-            height: 80px; 
-            background: linear-gradient(135deg, #FFFAF0, #FFF); 
-            border: 2px solid var(--aksen-gold); 
-            border-radius: 50%; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            box-shadow: 0 15px 30px rgba(197, 168, 128, 0.3), inset 0 0 15px rgba(197, 168, 128, 0.2); 
-            animation: levitasiKado 3s ease-in-out infinite; /* Animasi melayang yang elegan */
-            z-index: 10;
-        }
-        
-        /* Animasi Melayang */
-        @keyframes levitasiKado {
-            0%, 100% { transform: translateX(-50%) translateY(0); box-shadow: 0 15px 30px rgba(197, 168, 128, 0.3), inset 0 0 15px rgba(197, 168, 128, 0.2); }
-            50% { transform: translateX(-50%) translateY(-10px); box-shadow: 0 25px 40px rgba(197, 168, 128, 0.2), inset 0 0 20px rgba(197, 168, 128, 0.4); }
-        }
 
+        .marketplace-box { flex-direction: column; text-align: center; border-left: none !important; border-top: 4px solid var(--aksen-gold); padding-top: 55px !important; margin-top: 60px !important; overflow: visible !important; }
+        .gift-icon-wrapper { position: absolute; top: -40px; left: 50%; transform: translateX(-50%); width: 80px; height: 80px; background: linear-gradient(135deg, #FFFAF0, #FFF); border: 2px solid var(--aksen-gold); border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 15px 30px rgba(197, 168, 128, 0.3), inset 0 0 15px rgba(197, 168, 128, 0.2); animation: levitasiKado 3s ease-in-out infinite; z-index: 10; }
+        @keyframes levitasiKado { 0%, 100% { transform: translateX(-50%) translateY(0); box-shadow: 0 15px 30px rgba(197, 168, 128, 0.3); } 50% { transform: translateX(-50%) translateY(-10px); box-shadow: 0 25px 40px rgba(197, 168, 128, 0.2); } }
         .gift-icon-wrapper svg { width: 35px; height: 35px; fill: var(--aksen-gold); }
-
-        .marketplace-badge { 
-            display: inline-flex; 
-            align-items: center; 
-            gap: 5px; 
-            background: rgba(197, 168, 128, 0.1); 
-            color: var(--aksen-gold); 
-            padding: 6px 15px; 
-            border-radius: 30px; 
-            font-size: 10px; 
-            font-weight: 700; 
-            letter-spacing: 1px; 
-            margin-top: 15px; 
-            border: 1px solid rgba(197, 168, 128, 0.3); 
-        }
-        
-        .gift-actions { 
-            display: flex; 
-            gap: 15px; 
-            width: 100%; 
-            margin-top: 25px; 
-            justify-content: center; 
-        }
-        .btn-marketplace { 
-            flex: 1; 
-            background: linear-gradient(135deg, var(--bg-sage), #7A8466); /* Ganti warna sage agar beda dengan copy */
-            color: #fff; border: none; 
-            padding: 14px; 
-            border-radius: 30px; 
-            font-size: 11px; 
-            cursor: pointer; 
-            transition: all 0.3s ease; 
-            font-weight: 700; 
-            letter-spacing: 1px; 
-            text-transform: uppercase; 
-            box-shadow: 0 5px 15px rgba(143, 151, 121, 0.4); 
-            display: flex; justify-content: center; align-items: center; gap: 8px;
-        }
+        .marketplace-badge { display: inline-flex; align-items: center; gap: 5px; background: rgba(197, 168, 128, 0.1); color: var(--aksen-gold); padding: 6px 15px; border-radius: 30px; font-size: 10px; font-weight: 700; letter-spacing: 1px; margin-top: 15px; border: 1px solid rgba(197, 168, 128, 0.3); }
+        .gift-actions { display: flex; gap: 15px; width: 100%; margin-top: 25px; justify-content: center; }
+        .btn-marketplace { flex: 1; background: linear-gradient(135deg, var(--bg-sage), #7A8466); color: #fff; border: none; padding: 14px; border-radius: 30px; font-size: 11px; cursor: pointer; transition: all 0.3s ease; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; box-shadow: 0 5px 15px rgba(143, 151, 121, 0.4); display: flex; justify-content: center; align-items: center; gap: 8px; }
         .btn-marketplace:active { transform: scale(0.95); }
         .btn-copy-half { flex: 1; padding: 14px; }
-        /* ⏳ JURUS NOBEL 3: THE TIME CAPSULE */
-        .time-capsule-box { background: rgba(58, 53, 50, 0.9); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(197, 168, 128, 0.4); border-radius: 20px; padding: 40px 25px; max-width: 550px; margin: 50px auto 0; text-align: center; color: #fff; position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+        
+        .time-capsule-box { background: rgba(58, 53, 50, 0.9); backdrop-filter: blur(12px); border: 1px solid rgba(197, 168, 128, 0.4); border-radius: 20px; padding: 40px 25px; max-width: 550px; margin: 50px auto 0; text-align: center; color: #fff; position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
         .time-capsule-box::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, transparent, var(--aksen-gold), transparent); }
         .tc-title { font-family: var(--font-judul); font-size: 28px; color: var(--aksen-gold); margin-bottom: 10px; font-style: italic; }
         .tc-desc { font-size: 12px; color: #ddd; line-height: 1.6; margin-bottom: 20px; font-weight: 300;}
@@ -330,6 +265,7 @@
         .tc-textarea:focus { border-color: var(--aksen-gold); background: rgba(255,255,255,0.1); }
         .btn-segel { background: linear-gradient(135deg, #A38155, #8B6B43); color: #fff; border: none; padding: 12px 30px; border-radius: 30px; font-weight: bold; letter-spacing: 1px; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; font-size: 11px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
         .btn-segel:active { transform: scale(0.95); }
+        .btn-segel:disabled { background: #555; cursor: not-allowed; box-shadow: none; }
 
         .qr-section { background: var(--bg-sage); color: #fff; padding: 80px 20px; width: 100%; overflow: hidden; }
         .qr-box { background: #fff; padding: 25px; border-radius: 20px; display: inline-block; margin-top: 20px; border: 5px solid var(--aksen-gold); max-width: 100%;}
@@ -352,7 +288,7 @@
         .fairy-dust { position: absolute; width: 6px; height: 6px; background: #FFD700; border-radius: 50%; pointer-events: none; z-index: 99999; box-shadow: 0 0 8px #FFD700, 0 0 15px var(--aksen-pink); animation: dustSparkle 0.8s forwards ease-out; }
         @keyframes dustSparkle { 0% { opacity: 1; transform: scale(1) translateY(0) rotate(0deg); } 100% { opacity: 0; transform: scale(0) translateY(-40px) rotate(180deg); } }
 
-        /* 🌌 JURUS NOBEL 2: CONSTELLATION STARS */
+        /* CONSTELLATION STARS */
         .constellation-star { position: fixed; width: 4px; height: 4px; background: #FFF; border-radius: 50%; box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700; transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94); z-index: 9996; pointer-events: none; }
 
         #particles-container { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; pointer-events: none; z-index: 9998; overflow: hidden; }
@@ -369,8 +305,8 @@
             .cover-content h1 { font-size: 40px; margin-bottom: 20px;}
             .judul-utama { font-size: 24px; margin-bottom: 8px;}
             .sub-teks { font-size: 11px; line-height: 1.5; }
-            .salam-script { font-size: 18px; margin-bottom: 3px; /* text-shadow: HAPUS DI SINI */ }
-            .nama-sapaan { font-size: 36px; margin: 0px 0 8px 0; /* text-shadow: HAPUS DI SINI */ }
+            .salam-script { font-size: 18px; margin-bottom: 3px; }
+            .nama-sapaan { font-size: 36px; margin: 0px 0 8px 0; }
             .parallax-content p { font-size: 16px; line-height: 1.3; }
             .countdown-wrapper { gap: 8px; margin-top: 20px; }
             .cd-box { min-width: 55px; padding: 10px 5px; border-radius: 8px;}
@@ -660,7 +596,7 @@
             </div>
             <button class="btn-copy" onclick="copyTeks('rek-bca', this)">Salin Rekening</button>
         </div>
-<div class="gift-box marketplace-box" data-aos="fade-left">
+        <div class="gift-box marketplace-box" data-aos="fade-left">
             <div class="gift-icon-wrapper">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C9.5 2 7.5 4 7.5 6.5C7.5 7.4 7.8 8.2 8.3 8.8L2.5 10V22H21.5V10L15.7 8.8C16.2 8.2 16.5 7.4 16.5 6.5C16.5 4 14.5 2 12 2ZM12 4C13.4 4 14.5 5.1 14.5 6.5C14.5 7.9 13.4 9 12 9C10.6 9 9.5 7.9 9.5 6.5C9.5 5.1 10.6 4 12 4ZM4.5 11.5H11V20H4.5V11.5ZM13 11.5H19.5V20H13V11.5Z"/>
@@ -684,6 +620,7 @@
                 </button>
             </div>
         </div>
+    </section>
 
     <section class="section bg-sage-faded">
         <h2 class="judul-utama" data-aos="fade-down">Confirm Your Magic</h2>
@@ -748,7 +685,7 @@
     <script>
         AOS.init({ duration: 1000, once: true, offset: 50 });
 
-        /* 👑 JURUS NOBEL 1: WAX SEAL LOGIC */
+        /* WAX SEAL LOGIC */
         const seal = document.getElementById('wax-seal');
         const circle = document.querySelector('.progress-ring__circle');
         const radius = circle.r.baseVal.value;
@@ -760,16 +697,16 @@
         let isHolding = false;
 
         function startHold(e) {
-            if(e.cancelable) e.preventDefault(); // Cegah klik kanan di HP
+            if(e.cancelable) e.preventDefault(); 
             isHolding = true;
-            if(navigator.vibrate) navigator.vibrate(50); // Getar awal
+            if(navigator.vibrate) navigator.vibrate(50); 
             seal.classList.add('holding');
             circle.style.transition = 'stroke-dashoffset 2s linear';
             circle.style.strokeDashoffset = 0;
             
             holdTimer = setTimeout(() => {
                 if(isHolding) {
-                    if(navigator.vibrate) navigator.vibrate([100, 50, 100]); // Getar berhasil
+                    if(navigator.vibrate) navigator.vibrate([100, 50, 100]); 
                     bukaUndangan();
                 }
             }, 2000);
@@ -780,7 +717,7 @@
             clearTimeout(holdTimer);
             seal.classList.remove('holding');
             circle.style.transition = 'stroke-dashoffset 0.3s ease';
-            circle.style.strokeDashoffset = circumference; // Reset lingkaran
+            circle.style.strokeDashoffset = circumference; 
         }
 
         seal.addEventListener('touchstart', startHold, {passive: false});
@@ -788,7 +725,6 @@
         seal.addEventListener('mousedown', startHold);
         seal.addEventListener('mouseup', endHold);
         seal.addEventListener('mouseleave', endHold);
-        // Cegah klik kanan agar hold berfungsi baik
         seal.addEventListener('contextmenu', e => e.preventDefault());
 
 
@@ -882,7 +818,6 @@
             let scrollPct = (scrolled / winHeight) * 100;
             document.getElementById("scroll-vine").style.height = scrollPct + "%";
 
-            // Logic untuk Reveal Teks Epilog
             if(epilogueText) {
                 let rect = epilogueText.getBoundingClientRect();
                 let viewHeight = window.innerHeight;
@@ -890,12 +825,11 @@
                     let percentage = (viewHeight * 0.8 - rect.top) / (viewHeight * 0.6);
                     percentage = Math.max(0, Math.min(1, percentage));
                     epilogueText.style.backgroundPosition = `${100 - (percentage * 100)}% 0`;
-                    // HAPUS text-shadow dinamis di sini
                 }
             }
         });
 
-        /* 🌌 JURUS NOBEL 2: CONSTELLATION IDLE MAGIC */
+        /* CONSTELLATION IDLE MAGIC */
         let idleTimer;
         let constellationActive = false;
         const pContainer = document.getElementById('particles-container');
@@ -903,7 +837,6 @@
         function resetIdleTimer() {
             clearTimeout(idleTimer);
             if(constellationActive) shatterConstellation();
-            // Akan memanggil rasi bintang jika layar didiamkan 4 detik
             idleTimer = setTimeout(formConstellation, 4000);
         }
 
@@ -918,10 +851,8 @@
             if(!document.getElementById('cover').classList.contains('terbuka')) return; 
             constellationActive = true;
             
-            // Membuat 30 bintang membentuk hati
             for(let i=0; i<30; i++) {
                 let t = Math.PI * 2 * (i / 30);
-                // Rumus Matematika Bentuk Hati
                 let x = 16 * Math.pow(Math.sin(t), 3);
                 let y = 13 * Math.cos(t) - 5 * Math.cos(2*t) - 2 * Math.cos(3*t) - Math.cos(4*t);
                 
@@ -930,12 +861,10 @@
 
                 let star = document.createElement('div');
                 star.classList.add('constellation-star');
-                // Mulai dari atas acak
                 star.style.left = (Math.random() * window.innerWidth) + 'px';
                 star.style.top = '-20px';
                 pContainer.appendChild(star);
 
-                // Bergerak membentuk hati
                 setTimeout(() => {
                     star.style.left = px + 'px';
                     star.style.top = py + 'px';
@@ -948,13 +877,13 @@
             let stars = document.querySelectorAll('.constellation-star');
             stars.forEach(star => {
                 star.style.left = (Math.random() * window.innerWidth) + 'px';
-                star.style.top = window.innerHeight + 100 + 'px'; // Jatuh ke bawah
+                star.style.top = window.innerHeight + 100 + 'px'; 
                 star.style.opacity = '0';
                 setTimeout(() => star.remove(), 2000);
             });
         }
 
-        /* ✨ FAIRY DUST SCRIPT */
+        /* FAIRY DUST SCRIPT */
         let lastDustTime = 0;
         function createDust(e) {
             let now = Date.now();
@@ -1079,7 +1008,7 @@
         }, 1000);
 
         // =================================================================
-        // MESIN RADAR DATA GOOGLE SHEETS (LIVE)
+        // MESIN RADAR DATA GOOGLE SHEETS (DENGAN BYPASS CORS)
         // =================================================================
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxUmKFrQ7nTRiRr7n_BO5Sm8YTcFY62Ax5yFcLVdBTiDUwT3Hw_F8OSTvr2zJqxxXUd/exec';
 
@@ -1103,23 +1032,27 @@
             requestBody.append('Pesan', pesan);
             requestBody.append('Kategori', 'RSVP');
 
-            fetch(scriptURL, { method: 'POST', body: requestBody })
-                .then(response => {
-                    const newItem = document.createElement('div');
-                    newItem.className = 'guestbook-item';
-                    newItem.innerHTML = `<span class="gb-name">${nama}</span><span class="gb-time">Baru saja</span><p class="gb-text">${pesan}</p>`;
-                    document.getElementById('daftar-ucapan').insertBefore(newItem, document.getElementById('daftar-ucapan').firstChild);
-                    
-                    alert('Terima kasih! Konfirmasi kehadiran Anda telah tersimpan di Database kami.');
-                    form.reset();
-                    btnSubmit.innerHTML = btnText;
-                    btnSubmit.disabled = false;
-                })
-                .catch(error => {
-                    alert('Gagal mengirim data. Pastikan koneksi internet stabil.');
-                    btnSubmit.innerHTML = btnText;
-                    btnSubmit.disabled = false;
-                });
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: requestBody,
+                mode: 'no-cors' /* INI KUNCI ANTI-BLOKIR GOOGLE CHROME */
+            })
+            .then(response => {
+                const newItem = document.createElement('div');
+                newItem.className = 'guestbook-item';
+                newItem.innerHTML = `<span class="gb-name">${nama}</span><span class="gb-time">Baru saja</span><p class="gb-text">${pesan}</p>`;
+                document.getElementById('daftar-ucapan').insertBefore(newItem, document.getElementById('daftar-ucapan').firstChild);
+                
+                alert('Terima kasih! Konfirmasi kehadiran Anda telah tersimpan di Database kami.');
+                form.reset();
+                btnSubmit.innerHTML = btnText;
+                btnSubmit.disabled = false;
+            })
+            .catch(error => {
+                alert('Gagal mengirim data. Pastikan koneksi internet stabil.');
+                btnSubmit.innerHTML = btnText;
+                btnSubmit.disabled = false;
+            });
         }
 
         /* TIME CAPSULE GOOGLE SHEETS */
@@ -1140,21 +1073,25 @@
             requestBody.append('Pesan', pesanTc);
             requestBody.append('Kategori', 'Kapsul Waktu');
 
-            fetch(scriptURL, { method: 'POST', body: requestBody })
-                .then(response => {
-                    btn.innerHTML = "&#128274; DISEGEL HINGGA 2036"; 
-                    btn.style.background = "#555"; 
-                    btn.style.borderColor = "#555"; 
-                    btn.style.color = "#fff";
-                    box.disabled = true; 
-                    box.style.opacity = "0.5";
-                    alert('Pesan rahasia Anda telah disegel dan dikirim ke Brankas Data utama.');
-                })
-                .catch(error => {
-                    alert('Gagal menyegel. Coba lagi.');
-                    btn.innerHTML = btnText;
-                    btn.disabled = false;
-                });
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: requestBody,
+                mode: 'no-cors' /* INI KUNCI ANTI-BLOKIR GOOGLE CHROME */
+            })
+            .then(response => {
+                btn.innerHTML = "&#128274; DISEGEL HINGGA 2036"; 
+                btn.style.background = "#555"; 
+                btn.style.borderColor = "#555"; 
+                btn.style.color = "#fff";
+                box.disabled = true; 
+                box.style.opacity = "0.5";
+                alert('Pesan rahasia Anda telah disegel dan dikirim ke Brankas Data utama.');
+            })
+            .catch(error => {
+                alert('Gagal menyegel. Coba lagi.');
+                btn.innerHTML = btnText;
+                btn.disabled = false;
+            });
         }
     </script>
 </body>
